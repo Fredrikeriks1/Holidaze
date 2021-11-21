@@ -1,0 +1,70 @@
+.search-bar {
+  position: absolute;
+  top: 55vh;
+  left: 50vw;
+  margin-left: -6.75rem;
+  input,
+  input:focus,
+  input:active {
+    border: none;
+    outline: none;
+    background-color: rgba(221, 221, 221, 0.5);
+    width: 13.5rem;
+    font-size: 1em;
+    text-align: left;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    &::placeholder {
+      color: $dark-blue;
+      opacity: 1;
+      font-family: montserrat, FontAwesome, sans-serif;
+    }
+  }
+}
+.search-results {
+  position: absolute;
+  top: 62vh;
+  left: 10vw;
+  z-index: 99;
+  width: 80vw;
+  background-color: $white;
+  box-shadow: $box-shadow;
+  @media screen and (max-width: 800px) {
+    left: 2vw;
+    width: 96vw;
+  }
+  .cards {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    background-color: $white;
+    padding-left: 2rem;
+    @media screen and (max-width: 800px) {
+      padding: 0;
+      h3 {
+        max-width: 70%;
+      }
+    }
+  }
+  .cards__img {
+    position: relative;
+    width: 28rem;
+    height: 13rem;
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+  }
+  .cards__txt {
+    padding: 0rem 1rem;
+  }
+  .highlights,
+  .btn__book,
+  .cards__address {
+    display: none;
+  }
+  .btn__learn {
+    display: block;
+    width: 12rem;
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,259 @@
+.accommodations {
+  display: flex;
+  flex-flow: row wrap;
+  position: absolute;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  margin: 1.5rem 0rem 0rem 2.9rem;
+  padding-bottom: 5rem;
+}
+.accommodations-wrapper {
+  margin: 2.2rem;
+}
+.accommodations-tiles {
+  box-shadow: $box-shadow;
+  border-radius: 24px;
+  width: 18rem;
+  max-width: 82vw;
+  height: calc(100% + 1.5rem);
+  line-height: 1em;
+  p {
+    margin-bottom: 0.5rem;
+  }
+}
+.accommodations-links {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  background-color: $dark-blue;
+  color: $black;
+  padding: 1.5rem 0rem;
+  border-radius: 30px 30px 0px 0px;
+  margin-bottom: 1.5rem;
+  .fa-edit,
+  .fa-eye,
+  .fa-camera {
+    color: $white;
+    font-size: 1.5em;
+    border-radius: 50%;
+    &:hover {
+      background: $white;
+      color: $dark-blue;
+    }
+  }
+  .fa-edit {
+    padding: 1rem 0.9rem 0.9rem 1rem;
+  } //top right bottom left
+  .fa-eye,
+  .fa-camera {
+    padding: 1rem;
+  }
+}
+.accommodations-info {
+  margin: 0rem 2rem;
+  h4 {
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+}
+.add,
+.edit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  margin-top: 3vw;
+  margin-left: 2.7rem;
+}
+.edit {
+  .btn-white,
+  .btn-blue,
+  .btn-red {
+    padding: 0.5rem 0rem;
+    margin-right: 0.5rem;
+  }
+}
+.messages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  margin-top: 5vh;
+  margin-left: 2.9rem;
+  transition: transform ease-out 0.5s;
+  a {
+    color: $black;
+    border-top: solid 1px #e9e9e9;
+    border-left: solid 1px #e9e9e9;
+    border-right: solid 1px #e9e9e9;
+    border-bottom: solid 1px #e9e9e9;
+    background-color: #f5f5f5;
+    &:hover {
+      box-shadow: $box-shadow;
+      z-index: 99;
+      transform: scale(1.01);
+    }
+    &:active,
+    &:focus {
+      background-color: #d4d3d3;
+    }
+  }
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-flow: row nowrap;
+    width: 80vw;
+    padding: 0.8rem;
+    h5 {
+      width: 25%;
+      margin-left: 1rem;
+      @media screen and (max-width: 800px) {
+        display: none;
+      }
+    }
+    p {
+      white-space: nowrap;
+      width: 75%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-right: 1rem;
+    }
+    p + p {
+      max-width: 5.7rem;
+    }
+  }
+}
+.view-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  margin-left: 2.8rem;
+  margin-top: 10%;
+  form {
+    div {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-flow: row nowrap;
+      margin-top: 1rem;
+    }
+    p {
+      width: 86%;
+      display: flex;
+      flex-flow: column nowrap;
+      span {
+        color: $light-grey;
+        font-size: 0.8em;
+        margin-top: 0.2rem;
+      }
+    }
+  }
+}
+.enquiries {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-left: 3rem;
+  @media screen and (max-width: 800px) {
+    flex-flow: column;
+  }
+  .enquiries-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    box-shadow: $box-shadow;
+    width: 32rem;
+
+    padding: 0 2rem;
+    margin: 2rem;
+    @media screen and (max-width: 800px) {
+      width: 15rem;
+      flex-flow: column;
+    }
+    div {
+      max-width: 50%;
+      @media screen and (max-width: 800px) {
+        max-width: 100%;
+        p {
+          font-size: 0.8em;
+        }
+      }
+      p {
+        font-size: 0.9em;
+      }
+    }
+    a {
+      font-size: 10rem;
+      transition: 0.2s;
+      margin-right: 1rem;
+      &:hover {
+        transform: scale(1.1);
+      }
+      i {
+        color: $dark-blue;
+      }
+    }
+    .fa-trash {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      margin-left: 13.2rem;
+      top: 0rem;
+      color: $light-grey;
+      transition: 0.2s;
+      font-size: 1.5em;
+      @media screen and (max-width: 800px) {
+        position: relative;
+        top: -1.5rem;
+        margin-left: 11.5rem;
+      }
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+.enquiry-detail {
+  position: absolute;
+  display: flex;
+  flex-flow: column;
+  line-height: 1.5em;
+  top: 50vh;
+  margin-top: -17rem;
+  left: 50vw;
+  margin-left: -13.5rem;
+  height: 30rem;
+  width: 30rem;
+  box-shadow: $box-shadow;
+  text-align: center;
+  color: $black;
+  @media screen and (max-width: 800px) {
+    transform: scale(0.65);
+  }
+  h4 {
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(204, 204, 204, 0.753);
+    font-weight: 200;
+  }
+  img {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  a {
+    color: $black;
+    font-weight: 900;
+    &:hover,
+    &:focus {
+      transform: scale(1.05);
+    }
+  }
+}

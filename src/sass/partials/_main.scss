@@ -1,0 +1,126 @@
+.accommodations-page {
+  margin-bottom: 5rem;
+  @media screen and (max-width: 800px) {
+    margin-bottom: 35rem;
+  }
+  .recently-veiwed-container {
+    margin-top: 90vh;
+    h2 {
+      display: none;
+    }
+  }
+  .search-bar {
+    position: absolute;
+    top: 85vh;
+    left: 3rem;
+    margin-left: 0rem;
+    @media screen and (max-width: 800px) {
+      top: 65vh;
+    }
+    input {
+      border-bottom: solid 1px $black;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-radius: 0px;
+      padding: 0.5rem 1rem;
+      background-color: $white;
+    }
+  }
+  .search-results {
+    position: relative;
+    top: 85vh;
+    left: 0;
+    z-index: 9;
+    width: 100vw;
+    height: 100%;
+    box-shadow: none;
+    @media screen and (max-width: 800px) {
+      top: 65vh;
+    }
+    .cards {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      margin-left: 10vw;
+      width: 80vw;
+      background-color: $white;
+      padding-left: 2rem;
+      box-shadow: none;
+      @media screen and (max-width: 800px) {
+        margin-left: 0;
+        padding: 0;
+        width: 100vw;
+      }
+    }
+    .cards__img {
+      position: relative;
+      width: 27rem;
+      height: 20rem;
+    }
+    .highlights {
+      @media screen and (max-width: 800px) {
+        font-size: 0.7em;
+      }
+    }
+    .highlights,
+    .btn__book {
+      display: flex;
+    }
+  }
+  .btn__close {
+    margin-top: -2rem;
+  }
+  .btn__learn {
+    display: none;
+  }
+}
+.contact__bg {
+  background-image: url("http://www.gettyimages.no/detail/1085883234");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $dark-blue;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: -9;
+  @media screen and (max-width: 800px) {
+    background-image: none;
+  }
+}
+.recently-veiwed-container {
+  h2 {
+    margin-bottom: 3rem;
+    font-weight: 600;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    text-align: center;
+    @media screen and (max-width: 800px) {
+      font-size: 1.5em;
+    }
+  }
+}
+.default {
+  .cards {
+    display: none;
+    &:nth-child(16),
+    &:nth-child(15) {
+      display: flex;
+    }
+  }
+}
+.more {
+  .cards {
+    display: flex;
+  }
+}
+.recently-veiwed {
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin-bottom: 1rem;
+}

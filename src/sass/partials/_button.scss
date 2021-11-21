@@ -1,0 +1,170 @@
+button {
+  display: block;
+  position: relative;
+  padding: 0.5rem 1.6rem;
+  width: auto;
+  border: 2px solid $dark-blue;
+  background-color: $white;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  @media screen and (max-width: 800px) {
+    margin-top: 0rem;
+  }
+  &:hover {
+    background-color: $dark-blue;
+    color: $white;
+    outline: none;
+  }
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+.btn-blue {
+  background-color: $dark-blue;
+  color: $white;
+  &:hover {
+    color: $dark-blue;
+    background-color: $white;
+  }
+}
+.btn-red {
+  border: 2px solid $red;
+  background-color: $red;
+  color: $white;
+  &:hover {
+    color: $red;
+    background-color: $white;
+  }
+}
+.btn__close {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 2vh;
+  left: calc(100% - 7rem);
+  @media screen and (max-width: 800px) {
+    top: 5vh;
+    left: calc(100% - 4rem);
+  }
+  i {
+    color: $dark-blue;
+    font-size: 2em;
+  }
+  &:hover {
+    background-color: transparent;
+    transform: scale(1.1);
+  }
+}
+.btn-more,
+.btn__learn {
+  display: none;
+}
+.btn-default {
+  //view more
+  background-color: transparent;
+  border: none;
+  font-size: 1.2em;
+  font-weight: 600;
+  width: 15rem;
+  margin-left: calc(50vw - 7.5rem);
+  margin-bottom: 5rem;
+  text-transform: capitalize;
+  transition: transform ease-out 0.1s;
+  color: $black;
+  &:hover {
+    transform: scale(1.05);
+    background-color: transparent;
+    color: $black;
+  }
+}
+.react-confirm-alert-button-group {
+  flex-flow: row;
+  button {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: montserrat, sans-serif;
+  }
+}
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  button {
+    width: 15rem;
+  }
+}
+.view-message {
+  .btn-link {
+    border: none;
+    text-transform: none;
+    width: 25rem;
+    padding: 0;
+    margin-top: -1rem;
+    text-align: left;
+    color: $light-grey;
+    font-family: learning-curve, sans-serif;
+    font-size: 1.5em;
+    font-weight: 900;
+    transition: none;
+    &:hover {
+      background-color: transparent;
+      color: $black;
+      transform: none;
+    }
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+  }
+  form {
+    button,
+    a {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition: transform ease-out 0.1s;
+      i {
+        color: $light-grey;
+      }
+      &:hover {
+        background-color: transparent;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.SoMe-container {
+  .btn-contact {
+    display: inline;
+    background: transparent;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    i {
+      color: $white;
+      cursor: pointer;
+      transition: transform ease-out 0.1s;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  .btn-blue {
+    display: none;
+  }
+}
+.footer-col-3 {
+  .btn-blue {
+    display: inline;
+  }
+  .btn-contact {
+    display: none;
+  }
+}

@@ -1,0 +1,85 @@
+.detail-page {
+  display: flex;
+  flex-flow: column;
+  .detail-col-1 {
+    display: flex;
+    div {
+      display: flex;
+      flex-flow: column;
+      margin-top: -5rem;
+      z-index: -9;
+      box-shadow: $box-shadow;
+      &:nth-child(1) {
+        flex: 2.5;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      &:nth-child(2) {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        background-color: $dark-blue;
+        padding: 3rem;
+        @media screen and (max-width: 800px) {
+          display: none;
+        }
+        h2 {
+          margin-top: 5rem;
+          font-size: 4em;
+          text-transform: uppercase;
+          text-align: center;
+          color: $white;
+        }
+        div {
+          display: flex;
+          flex-flow: row;
+          padding: 0;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+  .detail-col-2 {
+    display: flex;
+    margin: 6rem 15vw;
+    width: 70vw;
+    @media screen and (max-width: 800px) {
+      margin: 3rem 5vw;
+      width: 90vw;
+    }
+    div {
+      display: flex;
+      flex-flow: column;
+    }
+    h2 {
+      font-size: 3em;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      @media screen and (max-width: 800px) {
+        font-size: 2em;
+      }
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+    a {
+      margin-bottom: 1rem;
+      color: $light-grey;
+      &:hover {
+        color: $black;
+      }
+    }
+  }
+  .detail-footer {
+    display: flex;
+  }
+  .btn__book {
+    display: block;
+  }
+  .btn__learn {
+    display: none;
+  }
+}

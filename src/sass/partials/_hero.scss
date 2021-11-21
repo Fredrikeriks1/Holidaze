@@ -1,0 +1,58 @@
+@keyframes cursorAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.typed-style::after {
+  //flashing cursor
+  content: "|";
+  display: inline;
+  animation: cursorAnimation 1.5s infinite;
+  opacity: 1;
+}
+.typed-banner {
+  position: absolute;
+  top: 50vh;
+  margin-top: -9rem;
+  left: 50vw;
+  width: 55rem;
+  margin-left: -27.5rem;
+  text-align: center;
+  cursor: none;
+  h2 {
+    color: $white; //contast tested: AAA
+    font-weight: 100;
+    font-size: 2em;
+    line-height: 1.3em;
+    @media screen and (max-width: 600px) {
+      font-size: 1.1em;
+    }
+  }
+}
+.hero-img {
+  background-image: url("../images/hero.svg");
+  background-color: $dark-blue;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -9;
+}
+.hero-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-flow: column nowrap;
+  margin-top: 100vh;
+  margin-bottom: 0rem;
+}
